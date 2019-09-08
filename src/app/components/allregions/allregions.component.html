@@ -1,0 +1,15 @@
+<div class="alert alert-danger">
+  <h2>{{_pageTitle}} <span class="badge badge-success">{{_regionCount}}</span></h2>
+</div>
+<div class="row countryList">
+  <div class="col-md-4" *ngFor="let rc of _regions">
+    <div class="card my-4">
+      <div class="card-body">
+       <i class="fa fa-grin-squint"> </i>
+        <h3 class="regName">
+          <a class="text text-warning" routerLink='/all' (click)="getRegCode(rc)" name={{rc}}> {{rc}}</a>
+        </h3>
+      </div>
+    </div>
+  </div>
+</div>
